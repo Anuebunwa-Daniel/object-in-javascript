@@ -1,0 +1,111 @@
+//nesting objects and arrays
+let myCars = {
+    make: {
+        carName1: 'Royce',
+        carName2: 'chevrolet',
+        carName3: 'ford'
+    },
+    color: 'black',
+    speed: '300kmh',
+
+    //Array in object
+    models: ['Royce2022', 'chevrolet Limited Edition', 'ford Future']
+
+}
+
+//referencing the values from nested objects and array
+//for objects
+
+var make =myCars.make.carName2;
+console.log (make);
+//for arrays
+
+var model =myCars.models [1]
+console.log (model)
+
+//objects in an array
+
+var arr =[{}, {}, {},];
+var adresses =[
+    {
+        street: 'okpoyo cr',
+        number: 4,
+        zipcode: 123456,
+        city: 'ph city',
+        state: 'rivers'
+    },
+    {
+        street: '!st Boulevard',
+        number: 13,
+        zipcode: 1234,
+        city: 'somewhere in anywhere',
+        state: 'i dont know'
+    }
+
+];
+
+let streetName =adresses[0].street;
+console.log(streetName);
+let streetName2 =adresses[1].street;
+console.log(streetName2);
+
+// classwor
+ let people = { 
+    friends: []
+ }
+var first = {
+    firstname: 'daniel',
+    lastname: 'mike',
+    idValue: '123bc'
+};
+
+var second = {
+    firstname: 'chinedu',
+    lastname: 'jide',
+    idValue: '456bc'
+};
+var third = {
+    firstname: 'werey',
+    lastname: 'sabinus',
+    idValue: '789bc'
+};
+
+people.friends.push(first);
+people.friends.push(second);
+people.friends.push(third);
+
+console.log (people.friends)
+
+
+//assignment 1
+
+let storeItems = [];
+
+var fan = {
+    name: 'olx',
+    model: '1345',
+    cost: '400$',
+    quantity: 100
+};
+
+var speaker = {
+    name: 'sony by beat',
+    model: 'noPower',
+    cost: '1200$',
+    quantity: 'limited quantity'
+};
+var iphone = {
+    name: '13 pro max',
+    model: '2022 model',
+    cost: '1500$',
+    quantity: 7
+};
+
+storeItems.push(fan);
+storeItems.push(speaker);
+storeItems.push(iphone);
+
+console.log(storeItems);
+
+let iphoneQua = storeItems[2].quantity;
+console.log (iphoneQua)
